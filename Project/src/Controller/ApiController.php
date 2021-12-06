@@ -74,6 +74,25 @@ class ApiController extends AbstractController
         $form = $this->createForm(TaskType::class, $task);
         $form->submit($request->request->all());
         $this->taskRepository->save($task);
-        return $this->json("Task succesfully add");
+        return $this->json($task);
+    }
+
+    /**
+     * @Route("/tasks/{taskId}", name="api_update_task", methods={"PUT"})
+     * @param Request $request
+     * @param int $taskId
+     * @return Response
+     */
+
+    public function updateTask(Request $request, int $taskId): Response
+    {
+        $task = $this->taskRepository->find($taskId);
+        if(!$task) {
+            throw new NotFoundHttpException();
+        }
+        $form = $this->createForm(TaskType::class, $task);
+        $form->submit($request->request->all());
+        $this->taskRepository->save($task);
+        return $this->json($task);
     }
 }

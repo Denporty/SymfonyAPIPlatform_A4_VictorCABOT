@@ -1380,7 +1380,7 @@ false posix/WET
 false posix/Zulu
 false posixrules
 </TimeZones>
-      <IntrospectionStateNumber>751</IntrospectionStateNumber>
+      <IntrospectionStateNumber>769</IntrospectionStateNumber>
       <StartupTime>1638782775</StartupTime>
     </root>
     <database id="2" parent="1" name="api-platform">
@@ -1396,7 +1396,7 @@ false posixrules
 13391||-9223372036854775808|U|G
 13391||10|U|G</Grants>
       <Owner>docker</Owner>
-      <IntrospectionStateNumber>752</IntrospectionStateNumber>
+      <IntrospectionStateNumber>770</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="docker">
@@ -1483,7 +1483,7 @@ false posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>527</StateNumber>
       <Owner>docker</Owner>
-      <IntrospectionStateNumber>752</IntrospectionStateNumber>
+      <IntrospectionStateNumber>770</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="23" parent="2" name="plpgsql">

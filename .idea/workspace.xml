@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf86541c-0941-4de6-b519-1fdb60e6f0f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42/storage_v2/_src_/database/api-platform.xi5CwA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42/storage_v2/_src_/database/api-platform.xi5CwA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.env.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pullScript.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pullScript.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/src/Controller/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/src/Controller/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/src/Repository/TaskRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/src/Repository/TaskRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638777137278</updated>
       <workItem from="1638777141605" duration="355000" />
-      <workItem from="1638779201317" duration="9586000" />
+      <workItem from="1638779201317" duration="12652000" />
     </task>
     <servers />
   </component>

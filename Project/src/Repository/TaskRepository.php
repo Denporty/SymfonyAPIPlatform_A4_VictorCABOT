@@ -35,6 +35,12 @@ class TaskRepository extends ServiceEntityRepository
         $this->objectManager->flush();
     }
 
+    public function update(Task $task)
+    {
+        $this->objectManager->merge($task);
+        $this->objectManager->flush();
+    }
+
     // /**
     //  * @return Task[] Returns an array of Task objects
     //  */

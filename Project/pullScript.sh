@@ -6,15 +6,9 @@ echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # do dangerous stuff
-    php bin/console doctrine:fixtures:load
+    php bin/console doctrine:fixtures:load --force
 fi
-
-rm -rf ./bootstrap/cache/config.php
-php bin/console clear-compiled
-php bin/console view:clear
-php bin/console config:clear
-php bin/console route:cache
-php bin/console optimize:clear
+php bin/console cache:pool:clear cache.global_clearer
 npm install
 npm run dev
 echo "Script pull finished"

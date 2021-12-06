@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Task;
+use App\Form\TaskType;
 use App\Repository\TaskRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
@@ -59,5 +61,19 @@ class ApiController extends AbstractController
         }
         $this->taskRepository->delete($task);
         return $this->json("Task delete succesfully");
+    }
+
+    /**
+     * @Route("/tasks", name="api_post_task", methods={"POST"})
+     * @param Request $request
+     * @return Response
+     */
+
+    public function postTask(Request $request): Response {
+        $task = new Task();
+        $form = $this->createForm(TaskType::class, $task);
+        $form->submit($request->request->all());
+        $this->taskRepository->save($task);
+        return $this->json("Task succesfully add");
     }
 }

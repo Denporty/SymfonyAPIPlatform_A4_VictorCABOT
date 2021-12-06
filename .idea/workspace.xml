@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf86541c-0941-4de6-b519-1fdb60e6f0f6" name="Changes" comment="" />
+    <list default="true" id="bf86541c-0941-4de6-b519-1fdb60e6f0f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Project/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/pullScript.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.env" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Project/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Project/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Project/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Project/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -50,6 +63,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="21u3RUj59Mc0MyRe5meEh1BlIHz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,6 +73,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -72,10 +89,22 @@
       <option name="presentableId" value="Default" />
       <updated>1638777137278</updated>
       <workItem from="1638777141605" duration="355000" />
+      <workItem from="1638779201317" duration="7540000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

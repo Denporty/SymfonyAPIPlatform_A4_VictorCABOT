@@ -1,1 +1,0 @@
-# SymfonyAPIPlatform_A4_VictorCABOT

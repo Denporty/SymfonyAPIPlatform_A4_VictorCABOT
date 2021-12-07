@@ -6,7 +6,7 @@ services:
 only:
   - main
   - develop
-  - preprod
+  - pre-prod
 cache:
   directories:
     - node_modules

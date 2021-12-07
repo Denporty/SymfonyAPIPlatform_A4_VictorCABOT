@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf86541c-0941-4de6-b519-1fdb60e6f0f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Project/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/src/DataFixtures/UserFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42/storage_v2/_src_/database/api-platform.xi5CwA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5da05821-a59b-4a00-b634-b67ea22f2d42/storage_v2/_src_/database/api-platform.xi5CwA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/pullScript.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pullScript.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Project/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/src/Controller/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/src/Controller/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/src/Repository/TaskRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/src/Repository/TaskRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +72,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project/src/DataFixtures" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project/src/DataFixtures" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638777137278</updated>
       <workItem from="1638777141605" duration="355000" />
-      <workItem from="1638779201317" duration="12652000" />
+      <workItem from="1638779201317" duration="17172000" />
     </task>
     <servers />
   </component>

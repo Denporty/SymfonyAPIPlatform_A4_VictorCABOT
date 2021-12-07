@@ -3,11 +3,15 @@
 namespace App\Controller;
 
 use App\Entity\Task;
+use App\Entity\User;
 use App\Form\TaskType;
 use App\Repository\TaskRepository;
+use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -20,12 +24,21 @@ class ApiController extends AbstractController
 {
     /**
      * @var TaskRepository
+     * @var UserRepository
      */
 
-    private $taskRepository;
+    private TaskRepository $taskRepository;
+    private UserRepository $userRepository;
 
-    public function __construct(TaskRepository $taskRepository){
+    public function __construct(TaskRepository $taskRepository, RequestStack $request, UserRepository $userRepository){
         $this->taskRepository = $taskRepository;
+        $this->userRepository = $userRepository;
+        $apiToken = $request->getCurrentRequest()->get('api-token');
+        $user = $this->userRepository->findOneBy(['apiKey' => $apiToken]);
+
+        if(!$user) {
+            throw new HttpException(401, "Unauthorized");
+        }
     }
 
     /**

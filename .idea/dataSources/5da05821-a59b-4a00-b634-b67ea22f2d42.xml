@@ -1380,8 +1380,8 @@ false posix/WET
 false posix/Zulu
 false posixrules
 </TimeZones>
-      <IntrospectionStateNumber>769</IntrospectionStateNumber>
-      <StartupTime>1638782775</StartupTime>
+      <IntrospectionStateNumber>789</IntrospectionStateNumber>
+      <StartupTime>1638801664</StartupTime>
     </root>
     <database id="2" parent="1" name="api-platform">
       <ObjectId>16386</ObjectId>
@@ -1396,7 +1396,7 @@ false posixrules
 13391||-9223372036854775808|U|G
 13391||10|U|G</Grants>
       <Owner>docker</Owner>
-      <IntrospectionStateNumber>770</IntrospectionStateNumber>
+      <IntrospectionStateNumber>790</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="docker">
@@ -1483,7 +1483,7 @@ false posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>527</StateNumber>
       <Owner>docker</Owner>
-      <IntrospectionStateNumber>770</IntrospectionStateNumber>
+      <IntrospectionStateNumber>790</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="23" parent="2" name="plpgsql">
@@ -1590,39 +1590,51 @@ false posixrules
       <StateNumber>738</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="36" parent="22" name="doctrine_migration_versions">
+    <sequence id="36" parent="22" name="user_id_seq">
+      <ObjectId>16401</ObjectId>
+      <Owner>docker</Owner>
+      <StateNumber>775</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <table id="37" parent="22" name="doctrine_migration_versions">
       <ObjectId>16387</ObjectId>
       <Owner>docker</Owner>
       <StateNumber>737</StateNumber>
       <AccessMethodId>2</AccessMethodId>
     </table>
-    <table id="37" parent="22" name="task">
+    <table id="38" parent="22" name="task">
       <ObjectId>16394</ObjectId>
       <Owner>docker</Owner>
       <StateNumber>738</StateNumber>
       <AccessMethodId>2</AccessMethodId>
     </table>
-    <column id="38" parent="36" name="version">
+    <table id="39" parent="22" name="user">
+      <ObjectId>16402</ObjectId>
+      <Owner>docker</Owner>
+      <StateNumber>775</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+    </table>
+    <column id="40" parent="37" name="version">
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>737</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="39" parent="36" name="executed_at">
+    <column id="41" parent="37" name="executed_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>737</StateNumber>
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <TypeId>1114</TypeId>
     </column>
-    <column id="40" parent="36" name="execution_time">
+    <column id="42" parent="37" name="execution_time">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>737</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="41" parent="36" name="doctrine_migration_versions_pkey">
+    <index id="43" parent="37" name="doctrine_migration_versions_pkey">
       <ObjectId>16391</ObjectId>
       <StateNumber>737</StateNumber>
       <ColNames>version</ColNames>
@@ -1633,42 +1645,42 @@ false posixrules
       <ClassIds>3126</ClassIds>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="42" parent="36" name="doctrine_migration_versions_pkey">
+    <key id="44" parent="37" name="doctrine_migration_versions_pkey">
       <ObjectId>16392</ObjectId>
       <StateNumber>737</StateNumber>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>doctrine_migration_versions_pkey</UnderlyingIndexName>
     </key>
-    <column id="43" parent="37" name="id">
+    <column id="45" parent="38" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>738</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="44" parent="37" name="title">
+    <column id="46" parent="38" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>738</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="37" name="description">
+    <column id="47" parent="38" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>738</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="46" parent="37" name="done">
+    <column id="48" parent="38" name="done">
       <Position>4</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>738</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="47" parent="37" name="task_pkey">
+    <index id="49" parent="38" name="task_pkey">
       <ObjectId>16399</ObjectId>
       <StateNumber>738</StateNumber>
       <ColNames>id</ColNames>
@@ -1678,12 +1690,74 @@ false posixrules
       <ClassIds>1978</ClassIds>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="48" parent="37" name="task_pkey">
+    <key id="50" parent="38" name="task_pkey">
       <ObjectId>16400</ObjectId>
       <StateNumber>738</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>task_pkey</UnderlyingIndexName>
+    </key>
+    <column id="51" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>775</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="52" parent="39" name="email">
+      <Position>2</Position>
+      <DataType>varchar(180)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>775</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="53" parent="39" name="roles">
+      <Position>3</Position>
+      <DataType>json|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>775</StateNumber>
+      <TypeId>114</TypeId>
+    </column>
+    <column id="54" parent="39" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>775</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="39" name="api_key">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>775</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="56" parent="39" name="user_pkey">
+      <ObjectId>16407</ObjectId>
+      <StateNumber>775</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="57" parent="39" name="uniq_8d93d649e7927c74">
+      <ObjectId>16409</ObjectId>
+      <StateNumber>775</StateNumber>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="58" parent="39" name="user_pkey">
+      <ObjectId>16408</ObjectId>
+      <StateNumber>775</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>user_pkey</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
